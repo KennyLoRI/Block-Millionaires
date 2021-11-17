@@ -13,7 +13,14 @@ The whole data preprocessing, transaction enrichment and feature engineering pro
 
 After (1) and (2) was conducted, all transactions were available for creating the transaction graph needed to create Node2Vec embeddings for all source addresses. This is done in "Node2VecEmbedding.ipynb". 
 
-Taking the the resulting data frames, the models were created and evaluated in "FinalModel_train_01-10.ipynb". 
+The resulting dataframes can be found in: 
+1. y_testNonOver_8_3.csv
+2. X_testNonOver_8_3.csv
+3. y_trainNonOver_8_3.csv
+4. X_trainNonOver_8_3.csv
+The source addresses and the actual edge list of transactions can out of data privacy reasons not be published.
+
+Taking the the resulting dataframes, the models were created and evaluated in "FinalModel_train_01-10.ipynb". 
 
 The resuls of the modelling procedures per network architecture are stored in: 
 1. DF_8Lay_scores_sorted23_10.csv
