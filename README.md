@@ -8,10 +8,10 @@ The whole data preprocessing, transaction enrichment and feature engineering pro
 1. For a data set of individuals who have reported and proven their net worth which has eventually been used to determine the accredited investor status. 
 2. A data set of individuals which have not reported any kind of net worth level. Under the assumption of heavily right skewed wealth distributions, all of them were labled as non-accredited investors (sth. that should not be done in case this project will be repeated).
 
-- The code for (1) can be found in "FeatureEngineering_wo_Node2Vec(Data1).ipynb"
-- The code for (2) can be found in "FeatureEng_wo_Node2Vec(Data2).ipynb"
+- The code for (1) can be found in "FeatureEng(Data1)-Censored.ipynb"
+- The code for (2) is the same as for 1 except for the addresses used and the export functions storing the resulting dataframes. However, as this step needed to be censored in order to protect the privacy of the addresses the code of 1 should be sufficient.
 
-After (1) and (2) was conducted, all transactions were available for creating the transaction graph needed to create Node2Vec embeddings for all source addresses. This is done in "Node2VecEmbedding.ipynb". 
+After (1) and (2) was conducted, all transactions were available for creating the transaction graph needed to create Node2Vec embeddings for all source addresses. This is done in "Node2VecEmbedding-Censored.ipynb". This step was censored as well such that no addresses are depicted.
 
 The resulting dataframes can be found in: 
 1. y_testNonOver_8_3.csv
