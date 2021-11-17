@@ -3,7 +3,7 @@ This repository informs about the computational processes conducted for training
 
 An overview can be found in: https://github.com/KennyLoRI/Block-Millionaires/blob/main/OverviewDataProcessing.png
 
-Yet, the practical implementation was not as streamlined as described in the overview illustration. 
+## Reading Guide
 The whole data preprocessing, transaction enrichment and feature engineering process was conducted two times. 
 (1) For a data set of individuals who have reported and proven their net worth which has eventually been used to determine the accredited investor status. 
 (2) A data set of individuals which have not reported any kind of net worth level. Under the assumption of heavily right skewed wealth distributions, all of them were labled as non-accredited investors (sth. that should not be done in case this project will be repeated).
@@ -15,6 +15,12 @@ After (1) and (2) was conducted, all transactions were available for creating th
 
 Taking the the resulting data frames, the models were created and evaluated in "FinalModel_train_01-10.ipynb". 
 
-The final data set can be found in the repository as well. Yet everything is anonymized such that the source addresses are not published.
+The resuls of the modelling procedures per network architecture are stored in: 
+1. DF_8Lay_scores_sorted23_10.csv
+2. DF_4Lay_scores_sorted24_10.csv
+3. DF_10Lay_scores_sortedBigger22_10.csv
+4. Scores_2Layered23_10.csv
+
+
 
 
