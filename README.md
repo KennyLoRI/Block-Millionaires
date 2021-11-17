@@ -5,11 +5,11 @@ An overview can be found in: https://github.com/KennyLoRI/Block-Millionaires/blo
 
 ## Reading Guide
 The whole data preprocessing, transaction enrichment and feature engineering process was conducted two times. 
-(1) For a data set of individuals who have reported and proven their net worth which has eventually been used to determine the accredited investor status. 
-(2) A data set of individuals which have not reported any kind of net worth level. Under the assumption of heavily right skewed wealth distributions, all of them were labled as non-accredited investors (sth. that should not be done in case this project will be repeated).
+1. For a data set of individuals who have reported and proven their net worth which has eventually been used to determine the accredited investor status. 
+2. A data set of individuals which have not reported any kind of net worth level. Under the assumption of heavily right skewed wealth distributions, all of them were labled as non-accredited investors (sth. that should not be done in case this project will be repeated).
 
-The code for (1) can be found in "FeatureEngineering_wo_Node2Vec(Data1).ipynb"
-The code for (2) can be found in "FeatureEng_wo_Node2Vec(Data2).ipynb"
+- The code for (1) can be found in "FeatureEngineering_wo_Node2Vec(Data1).ipynb"
+- The code for (2) can be found in "FeatureEng_wo_Node2Vec(Data2).ipynb"
 
 After (1) and (2) was conducted, all transactions were available for creating the transaction graph needed to create Node2Vec embeddings for all source addresses. This is done in "Node2VecEmbedding.ipynb". 
 
