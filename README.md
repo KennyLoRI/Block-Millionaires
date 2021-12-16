@@ -1,12 +1,12 @@
 # Block-Millionaires
-This repository informs about the computational processes conducted for training ANNs to predict the accredited investor status of Ethereum EOAs.
+This repository informs about the computational processes conducted for training ANNs to predict the millionaire investor status of Ethereum EOAs.
 
 An overview can be found in: https://github.com/KennyLoRI/Block-Millionaires/blob/main/OverviewDataProcessing.png
 
 ## Reading Guide
 The whole data preprocessing, transaction enrichment and feature engineering process was conducted two times. 
-1. For a data set of individuals who have reported and proven their net worth which has eventually been used to determine the accredited investor status. 
-2. A data set of individuals which have not reported any kind of net worth level. Under the assumption of heavily right skewed wealth distributions, all of them were labled as non-accredited investors (sth. that should not be done in case this project will be repeated).
+1. For a data set of individuals who have reported and proven their net worth which has eventually been used to determine the millionaire status. 
+2. A data set of individuals which have not reported any kind of net worth level. Under the assumption of heavily right skewed wealth distributions, all of them were labled as non-millionaires (sth. that should not be done in case this project will be repeated).
 
 - The code for (1) can be found in "FeatureEng(Data1)-Censored.ipynb"
 - The code for (2) is the same as for 1 except for the addresses used and the export functions storing the resulting dataframes. However, as this step needed to be censored in order to protect the privacy of the addresses the code of 1 should be sufficient.
