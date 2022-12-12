@@ -3,7 +3,7 @@ This repository informs about the computational processes conducted for training
 
 An overview can be found in: https://github.com/KennyLoRI/Block-Millionaires/blob/main/OverviewDataProcessing.png
 
-## Reading Guide
+## Reading Guide and Comments
 The whole data preprocessing, transaction enrichment and feature engineering process was conducted two times. 
 1. For a data set of individuals who have reported and proven their net worth which has eventually been used to determine the millionaire status. 
 2. A data set of individuals which have not reported any kind of net worth level. Under the assumption of heavily right skewed wealth distributions, all of them were labled as non-millionaires (sth. that should not be done in case this project will be repeated).
