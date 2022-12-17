@@ -13,11 +13,11 @@ The whole data preprocessing, transaction enrichment and feature engineering pro
 
 After (1) and (2) was conducted, all transactions were available for creating the transaction graph needed to create Node2Vec embeddings for all source addresses. This is done in "Node2VecEmbedding-Censored.ipynb". This step was censored as well such that no addresses are depicted.
 
-The resulting dataframes can be found in: 
-1. y_testNonOver_8_3.csv
-2. X_testNonOver_8_3.csv
-3. y_trainNonOver_8_3.csv
-4. X_trainNonOver_8_3.csv
+The resulting feature matrices can be found in (note: The feature matrices had to be shortened for data protection reasons): 
+1. Ytrain_short.csv
+2. Xtrain_short.csv
+3. Ytest_short.csv
+4. Ytrain_short.csv
 The source addresses and the actual edge list of transactions can out of data privacy reasons not be published.
 
 Taking the the resulting dataframes, the models were created and evaluated in "FinalModel_train_01-10.ipynb". 
